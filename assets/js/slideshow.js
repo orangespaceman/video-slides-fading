@@ -45,10 +45,13 @@
         var videoSrc = $slides.eq(currentSlide).attr('data-video');
         if (videoSrc) {
             bigVideo.show(videoSrc);
-            $bigVideoWrap.css({opacity: 1});
-            $slides.eq(currentSlide).animate({
-                opacity: 0
-            }, transitionDuration);
+            bigVideoPlayer.on('loadeddata', function() {
+                bigVideoPlayer.off('loadeddata');
+                $bigVideoWrap.css({opacity: 1});
+                $slides.eq(currentSlide).animate({
+                    opacity: 0
+                }, transitionDuration);
+            });
         }
     }
 
