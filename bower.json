@@ -1,0 +1,12 @@
+{
+  "name": "video-slides",
+  "version": "0.0.1",
+  "description": "HTML full screen video/image slideshow",
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+    "BigVideo.js": "~1.1.4"
+  }
+}

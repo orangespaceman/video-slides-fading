@@ -1,0 +1,94 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+/* wrapper */
+    .wrapper {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        left: 0;
+    }
+
+
+/* slides */
+    .slide {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background-position: 50% 50%;
+        background-size: cover;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+
+/* nav */
+    .btn {
+        position: absolute;
+        z-index: 3;
+        top: 45%;
+        padding: 20px;
+        background: #000;
+        border-radius: 40px;
+        opacity: 0.25;
+        transition: opacity 0.5s;
+        cursor: pointer;
+    }
+
+        .btn:hover {
+            opacity: 0.5;
+        }
+
+        .btn:focus {
+            outline: none;
+            -webkit-animation-name: focusFlash;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-iteration-count: 1;
+        }
+
+    .btn-next {
+        right: 5%;
+    }
+
+    .btn-prev {
+        left: 5%;
+    }
+
+        @-webkit-keyframes focusFlash {
+          0%   { opacity:0.25; }
+          33%  { opacity:0.75; }
+          66%  { opacity:0.75; }
+          100% { opacity:0.25; }
+        }
+
+
+    /* nav - arrows */
+        .arrow {
+            display: block;
+            border-top: solid 2px #fff;
+            border-right: solid 2px #fff;
+            width: 20px;
+            height: 20px;
+            position: relative;
+            color: #fff;
+        }
+
+        .btn-next .arrow {
+            left: -5px;
+            transform: rotate(45deg);
+        }
+
+        .btn-prev .arrow {
+            right: -5px;
+            transform: rotate(-135deg);
+        }

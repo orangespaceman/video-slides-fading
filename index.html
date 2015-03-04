@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Full-screen Video Slideshow</title>
+    <meta name="description" content="Fullscreen Video Slideshow" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/video.js/dist/video-js/video-js.css">
+    <link rel="stylesheet" href="bower_components/BigVideo.js/css/bigvideo.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="slide" style="background-image: url('content/images/1.jpg');"></div>
+        <div class="slide" style="background-image: url('content/videos/1.jpg');" data-video="content/videos/1.mp4"></div>
+        <div class="slide" style="background-image: url('content/images/2.jpg');"></div>
+        <div class="slide" style="background-image: url('content/videos/2.jpg');" data-video="content/videos/2.mp4"></div>
+        <div class="slide" style="background-image: url('content/images/3.jpg');"></div>
+        <div class="slide" style="background-image: url('content/images/4.jpg');"></div>
+        <div class="slide" style="background-image: url('content/videos/3.jpg');" data-video="content/videos/3.mp4"></div>
+        <div class="slide" style="background-image: url('content/videos/4.jpg');" data-video="content/videos/4.mp4"></div>
+        <div class="slide" style="background-image: url('content/images/5.jpg');"></div>
+        <div class="slide" style="background-image: url('content/images/6.jpg');"></div>
+        <div class="slide" style="background-image: url('content/images/7.jpg');"></div>
+        <div class="slide" style="background-image: url('content/images/8.jpg');"></div>
+    </div>
+
+    <a href="#" class="btn btn-prev"><span class="arrow"></span></a>
+    <a href="#" class="btn btn-next"><span class="arrow"></span></a>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/eventEmitter/EventEmitter.js"></script>
+    <script src="bower_components/imagesloaded/imagesloaded.js"></script>
+    <script src="bower_components/video.js/dist/video-js/video.js"></script>
+    <script src="bower_components/BigVideo.js/lib/bigvideo.js"></script>
+
+    <script src="assets/js/slideshow.js"></script>
+
+</body>
+</html>
